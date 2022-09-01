@@ -15,7 +15,13 @@ public class TaskUtils {
     }
 
     public static Task setTaskId(Task task, List<Task> taskList) {
-        int id = taskList.size() + 1;
+        int id;
+        if (!taskList.isEmpty()) {
+            Integer lastId = taskList.get(taskList.size() - 1).getId();
+            id = lastId + 1;
+        } else {
+            id = 1;
+        }
         task.setId(id);
         return task;
     }
