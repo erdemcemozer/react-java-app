@@ -21,6 +21,14 @@ yarn install
 npm install
 ```
 
+Then you need to run Java and React app at the same time. For Java just run the spring boot project.
+For react use one of these commands
+
+```
+yarn start
+npm start
+```
+
 ---
 ## Project Structure
 
