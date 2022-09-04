@@ -14,5 +14,5 @@ public class Task {
     private Integer id;
     private String title;
     private String description;
-    private Date createDate;
+    private String createDate;
 }

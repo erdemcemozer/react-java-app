@@ -2,6 +2,7 @@ package com.example.taskApp.util;
 
 import com.example.taskApp.model.Task;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -28,6 +29,8 @@ public class TaskUtils {
 
     public static void setNewTaskDate(Task task) {
         Date date = new Date();
-        task.setCreateDate(date);
+        SimpleDateFormat df2 = new SimpleDateFormat("dd/MM/yyyy");
+        String dateText = df2.format(date);
+        task.setCreateDate(dateText);
     }
 }
